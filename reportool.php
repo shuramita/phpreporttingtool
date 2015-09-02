@@ -7,10 +7,8 @@
 # license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
 # website   www.haiausolution.com
 -------------------------------------------------------------------------*/
-
-// No direct access to this file
-defined('_JEXEC') or die('Restricted access');
-require_once 'database/sqlserver.php';
+//If you are using sqlserver, you need uncomment line bellow
+//require_once 'database/sqlserver.php';
 /**
  * Clients component helper.
  */
