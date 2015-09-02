@@ -3,11 +3,11 @@ public function createHaiAuReport(){
                // Display the template
                 $rp = new ReportsHelper('mysql');                
                 $rp->setTable('haiau_timesheet');
-                $filter = new JObject();
-                $filter->dateFrom = JRequest::getVar('from',date("Y-m-d",strtotime("-1 month")));
-                $filter->dateTo = JRequest::getVar('to',date("Y-m-d"));
-                $this->filter = &$filter;
-                $rp->setWhere(" where date_spent >= '".$this->filter->dateFrom."' and date_spent <= '".$this->filter->dateTo."'");
+                //$filter = new JObject();
+                //$filter->dateFrom = JRequest::getVar('from',date("Y-m-d",strtotime("-1 month")));
+                //$filter->dateTo = JRequest::getVar('to',date("Y-m-d"));
+                //$this->filter = &$filter;
+                //$rp->setWhere(" where date_spent >= '".$this->filter->dateFrom."' and date_spent <= '".$this->filter->dateTo."'");
                 $rp->prepareData();
                 //var_dump($rp->totalRecord);                
                 $rp->setCollAverage(true);
@@ -26,5 +26,6 @@ public function createHaiAuReport(){
                 $rp->setDecimal(3);
                 return $rp;
         }
-		
+$rp = createHaiAuReport();
+include "ex1_layout.php";		
 ?>
