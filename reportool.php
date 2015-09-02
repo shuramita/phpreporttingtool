@@ -6,6 +6,7 @@
 # copyright Copyright (C) 2014. All Rights Reserved
 # license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
 # website   www.haiausolution.com
+# email		minhtamtt@gmail.com
 -------------------------------------------------------------------------*/
 //If you are using sqlserver, you need uncomment line bellow
 //require_once 'database/sqlserver.php';
@@ -41,7 +42,7 @@ class ReportsHelper
             if($this->dbType == 'sqlserver') {
                 $this->db = new Sqlserver();
             }else{
-                $this->db = JFactory::getDbo();            
+                $this->db = new Mysql();            
             }
             
         }

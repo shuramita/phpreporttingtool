@@ -11,7 +11,7 @@
  *
  * @author Tam Nguyen
  */
-class Mysqlserver {
+class Mysql {
     //put your code here
     protected $svr;
     /* Get UID and PWD from application-specific files.  */

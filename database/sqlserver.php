@@ -23,7 +23,7 @@ class Sqlserver {
     protected $info;
     protected $stmt;
     
-    public function __construct($database="1MyCorp",$serverName="PERSONAL-PC\SQLEXPRESS",$userid="sa",$password=""){                
+    public function __construct($database="",$serverName="PERSONAL-PC\SQLEXPRESS",$userid="sa",$password=""){                
             $this->dbname =  $database;
             $this->uid = $userid;
             $this->pwd = $password;
